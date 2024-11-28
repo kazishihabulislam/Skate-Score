@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skate & Score</title>
+    <!-- Use Google Manrope Font Family CDN file is Here! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Use Daisy UI and Tailwind CSS CDN file is Here! -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -11,16 +18,176 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Font Awesome CDN file is Here! -->
+    <script
+      src="https://kit.fontawesome.com/bebff4b1c8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <h1>Hello World!</h1>
+    <header class="container mx-auto">
+      <nav class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-bold leading-10"
+              >Hockey<span class="text-red-500">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li
+                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+              >
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+              >
+                <a>About</a>
+              </li>
+              <li
+                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+              >
+                <a>Pages</a>
+              </li>
+              <li
+                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+              >
+                <a>Blog</a>
+              </li>
+              <li
+                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+              >
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex space-x-6">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a
+              class="btn text-white bg-[#FF4240] hover:bg-black duration-300 ease-in-out text-lg"
+              >Get Ticket</a
+            >
+          </div>
+      </nav>
+      <!-- 🚀Hero Banner Section Start is Here!  -->
+       <!-- <section class="lg:relative px-6 hidden">
+        <div class="carousel w-full h-2/5">
+          <div id="slide1" class="carousel-item relative w-full h-2/5 border-red-600 border">
+            <img
+              src="./Images/1.png"
+              class="w-full" />
+            <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-2/5 transform ">
+              <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full h-2/5 border-red-600 border">
+            <img
+              src="./Images/2.png"
+              class="w-full" />
+              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform ">
+                <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+                <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+              </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full h-2/5 border-red-600 border">
+            <img
+              src="./Images/3.png"
+              class="w-full" />
+              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform">
+                <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+                <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+              </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full h-2/5 border-red-600 border">
+            <img
+              src="./Images/4.png"
+              class="w-full" />
+              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform">
+                <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
+                <a href="#slide1" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
+              </div>
+          </div>
+        </div>
+        <div class="lg:w-2/5 p-6 rounded-lg bg-slate-900 text-white lg:absolute space-y-2 right-12 bottom-6">
+          <h3 class="text-2xl font-semibold">Meet all the heroes from the field.</h3>
+          <p class="text-sm font-normal">Meet the heroes from diverse fields who inspire, innovate, and lead. Their stories celebrate passion, resilience, and transformative impact.</p>
+        </div>
+       </section> -->
+       <section class="lg:relative px-6 space-y-3">
+        <div class="carousel w-full ">
+          <div id="slide1" class="carousel-item relative w-full lg:h-[600px]">
+            <img
+              src="./Images/1.png"
+              class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
+              <a href="#slide4" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
+              <a href="#slide2" class="btn btn-circle btn-outline border-gray-200 bg-slate-50 transform">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full  lg:h-[600px]">
+            <img
+              src="./Images/2.png"
+              class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
+              <a href="#slide1" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
+              <a href="#slide3" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full  lg:h-[600px]">
+            <img
+              src="./Images/3.png"
+              class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
+              <a href="#slide2" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
+              <a href="#slide4" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full  lg:h-[600px]">
+            <img
+              src="./Images/4.png"
+              class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
+              <a href="#slide3" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
+              <a href="#slide1" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-2/5 p-6 rounded-lg bg-slate-900 text-white lg:absolute space-y-2 lg:right-12 lg:bottom-6">
+          <h3 class="text-2xl font-semibold">Meet all the heroes from the field.</h3>
+          <p class="text-sm font-normal">Meet the heroes from diverse fields who inspire, innovate, and lead. Their stories celebrate passion, resilience, and transformative impact.</p>
+        </div>
+      </section>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
