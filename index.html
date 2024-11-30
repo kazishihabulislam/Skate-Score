@@ -27,167 +27,567 @@
   <body>
     <header class="container mx-auto">
       <nav class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-3xl font-bold leading-10"
-              >Hockey<span class="text-red-500">’</span>s</a
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li
-                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
-              >
-                <a>Home</a>
-              </li>
-              <li
-                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
-              >
-                <a>About</a>
-              </li>
-              <li
-                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
-              >
-                <a>Pages</a>
-              </li>
-              <li
-                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
-              >
-                <a>Blog</a>
-              </li>
-              <li
-                class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
-              >
-                <a>Contact</a>
-              </li>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex space-x-6">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a
-              class="btn text-white bg-[#FF4240] hover:bg-black duration-300 ease-in-out text-lg"
-              >Get Ticket</a
+          <a class="btn btn-ghost text-3xl font-bold leading-10"
+            >Hockey<span class="text-red-500">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li
+              class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
             >
-          </div>
+              <a>Home</a>
+            </li>
+            <li
+              class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+            >
+              <a>About</a>
+            </li>
+            <li
+              class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+            >
+              <a>Pages</a>
+            </li>
+            <li
+              class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+            >
+              <a>Blog</a>
+            </li>
+            <li
+              class="hover:text-red-500 duration-300 ease-in-out text-lg font-normal"
+            >
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end flex space-x-6">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a
+            class="btn text-white bg-[#FF4240] hover:bg-black duration-300 ease-in-out text-lg"
+            >Get Ticket</a
+          >
+        </div>
       </nav>
       <!-- 🚀Hero Banner Section Start is Here!  -->
-       <!-- <section class="lg:relative px-6 hidden">
-        <div class="carousel w-full h-2/5">
-          <div id="slide1" class="carousel-item relative w-full h-2/5 border-red-600 border">
-            <img
-              src="./Images/1.png"
-              class="w-full" />
-            <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-2/5 transform ">
-              <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
-              <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
-            </div>
-          </div>
-          <div id="slide2" class="carousel-item relative w-full h-2/5 border-red-600 border">
-            <img
-              src="./Images/2.png"
-              class="w-full" />
-              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform ">
-                <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
-                <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
-              </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full h-2/5 border-red-600 border">
-            <img
-              src="./Images/3.png"
-              class="w-full" />
-              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform">
-                <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
-                <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
-              </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full h-2/5 border-red-600 border">
-            <img
-              src="./Images/4.png"
-              class="w-full" />
-              <div class="absolute bottom-6 left-6 flex space-x-3 -translate-y-1/2 transform">
-                <a href="#slide4" class="btn btn-circle bg-black text-white hover:text-black">❮</a>
-                <a href="#slide1" class="btn btn-circle bg-black text-white hover:text-black">❯</a>
-              </div>
-          </div>
-        </div>
-        <div class="lg:w-2/5 p-6 rounded-lg bg-slate-900 text-white lg:absolute space-y-2 right-12 bottom-6">
-          <h3 class="text-2xl font-semibold">Meet all the heroes from the field.</h3>
-          <p class="text-sm font-normal">Meet the heroes from diverse fields who inspire, innovate, and lead. Their stories celebrate passion, resilience, and transformative impact.</p>
-        </div>
-       </section> -->
-       <section class="lg:relative px-6 space-y-3">
-        <div class="carousel w-full ">
+      <section class="lg:relative px-6 space-y-3">
+        <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full lg:h-[600px]">
-            <img
-              src="./Images/1.png"
-              class="w-full object-cover rounded-3xl" />
-            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
-              <a href="#slide4" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
-              <a href="#slide2" class="btn btn-circle btn-outline border-gray-200 bg-slate-50 transform">❯</a>
+            <img src="./Images/1.png" class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex space-x-3">
+              <a
+                href="#slide4"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50 transform"
+                >❯</a
+              >
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full  lg:h-[600px]">
-            <img
-              src="./Images/2.png"
-              class="w-full object-cover rounded-3xl" />
-            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
-              <a href="#slide1" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
-              <a href="#slide3" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+          <div id="slide2" class="carousel-item relative w-full lg:h-[600px]">
+            <img src="./Images/2.png" class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex space-x-3">
+              <a
+                href="#slide1"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❯</a
+              >
             </div>
           </div>
-          <div id="slide3" class="carousel-item relative w-full  lg:h-[600px]">
-            <img
-              src="./Images/3.png"
-              class="w-full object-cover rounded-3xl" />
-            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
-              <a href="#slide2" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
-              <a href="#slide4" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+          <div id="slide3" class="carousel-item relative w-full lg:h-[600px]">
+            <img src="./Images/3.png" class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex space-x-3">
+              <a
+                href="#slide2"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❯</a
+              >
             </div>
           </div>
-          <div id="slide4" class="carousel-item relative w-full  lg:h-[600px]">
-            <img
-              src="./Images/4.png"
-              class="w-full object-cover rounded-3xl" />
-            <div class="absolute left-6 bottom-6 flex -translate-y-1/2 transform space-x-3">
-              <a href="#slide3" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❮</a>
-              <a href="#slide1" class="btn btn-circle btn-outline border-gray-200 bg-slate-50">❯</a>
+          <div id="slide4" class="carousel-item relative w-full lg:h-[600px]">
+            <img src="./Images/4.png" class="w-full object-cover rounded-3xl" />
+            <div class="absolute left-6 bottom-6 flex space-x-3">
+              <a
+                href="#slide3"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle btn-outline border-gray-200 bg-slate-50"
+                >❯</a
+              >
             </div>
           </div>
         </div>
-        <div class="lg:w-2/5 p-6 rounded-lg bg-slate-900 text-white lg:absolute space-y-2 lg:right-12 lg:bottom-6">
-          <h3 class="text-2xl font-semibold">Meet all the heroes from the field.</h3>
-          <p class="text-sm font-normal">Meet the heroes from diverse fields who inspire, innovate, and lead. Their stories celebrate passion, resilience, and transformative impact.</p>
+        <div
+          class="lg:w-2/5 p-6 rounded-lg bg-slate-900 text-white lg:absolute space-y-2 lg:right-12 lg:bottom-6"
+        >
+          <h3 class="text-2xl font-semibold">
+            Meet all the heroes from the field.
+          </h3>
+          <p class="text-sm font-normal">
+            Meet the heroes from diverse fields who inspire, innovate, and lead.
+            Their stories celebrate passion, resilience, and transformative
+            impact.
+          </p>
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container px-7 mx-auto">
+      <!-- Hockey Statistics Section start is Here! -->
+      <section class="mt-24">
+        <!-- Professional Hockey Club Content Start is here! -->
+        <div
+          class="mx-7 border-dashed border-2 border-x-transparent px-4 text-center py-10"
+        >
+          <div class="lg:w-3/5 mx-auto space-y-3">
+            <h3 class="text-3xl font-bold">Professional Hockeys Club</h3>
+            <p class="text-base opacity-80">
+              The Professional Hockey Club is a premier organization dedicated
+              to fostering excellence in hockey. It provides world-class
+              training, state-of-the-art facilities, and a platform for players
+              to showcase their skills at the highest level. With a focus on
+              teamwork, discipline, and sportsmanship, the club aims to develop
+              athletes and inspire a passion for the game in the community.
+            </p>
+          </div>
+        </div>
+        <!-- Displays radial progress for player performance metrics -->
+        <div
+          class="mx-12 lg:my-20 my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center content-center"
+        >
+          <!-- Card Progress 1 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <div class="relative">
+              <div
+                class="radial-progress z-50"
+                style="
+                  --value: 87;
+                  rotate: 130deg;
+                  color: #ff4240;
+                  --size: 7rem;
+                "
+                role="progressbar"
+              ></div>
+              <div
+                class="radial-progress absolute top-0 left-0"
+                style="--value: 100; color: #e7e7e8; --size: 7rem"
+                role="progressbar"
+              >
+                <span class="text-xl text-gray-900 font-semibold">87%</span>
+              </div>
+            </div>
+            <h4 class="text-xl text-gray-900 font-semibold">
+              Players Facility
+            </h4>
+            <p class="text-sm opacity-80">
+              Players' facilities provide essential resources, advanced
+              equipment, and comfortable spaces to support training and
+              recovery.
+            </p>
+          </div>
+          <!-- Card Progress 2 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <div class="relative">
+              <div
+                class="radial-progress z-50"
+                style="
+                  --value: 95;
+                  rotate: 130deg;
+                  color: #49d293;
+                  --size: 7rem;
+                "
+                role="progressbar"
+              ></div>
+              <div
+                class="radial-progress absolute top-0 left-0"
+                style="--value: 100; color: #e7e7e8; --size: 7rem"
+                role="progressbar"
+              >
+                <span class="text-xl text-gray-900 font-semibold">95%</span>
+              </div>
+            </div>
+            <h4 class="text-xl text-gray-900 font-semibold">
+              Experienced Coach
+            </h4>
+            <p class="text-sm opacity-80">
+              An experienced coach empowers growth, builds confidence, and
+              drives success through tailored guidance and proven strategies.
+            </p>
+          </div>
+          <!-- Card Progress 3 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <div class="relative">
+              <div
+                class="radial-progress z-50"
+                style="
+                  --value: 90;
+                  rotate: 130deg;
+                  color: #ffb546;
+                  --size: 7rem;
+                "
+                role="progressbar"
+              ></div>
+              <div
+                class="radial-progress absolute top-0 left-0"
+                style="--value: 100; color: #e7e7e8; --size: 7rem"
+                role="progressbar"
+              >
+                <span class="text-xl text-gray-900 font-semibold">90%</span>
+              </div>
+            </div>
+            <h4 class="text-xl text-gray-900 font-semibold">Senior Player</h4>
+            <p class="text-sm opacity-80">
+              A senior player leads with skill, inspires teammates, and shares
+              valuable experience to achieve team goals.
+            </p>
+          </div>
+          <!-- Card Progress 4 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <div class="relative">
+              <div
+                class="radial-progress z-50"
+                style="
+                  --value: 80;
+                  rotate: 130deg;
+                  color: #4c8df1;
+                  --size: 7rem;
+                "
+                role="progressbar"
+              ></div>
+              <div
+                class="radial-progress absolute top-0 left-0"
+                style="--value: 100; color: #e7e7e8; --size: 7rem"
+                role="progressbar"
+              >
+                <span class="text-xl text-gray-900 font-semibold">80%</span>
+              </div>
+            </div>
+            <h4 class="text-xl text-gray-900 font-semibold">Training Ground</h4>
+            <p class="text-sm opacity-80">
+              A training ground fosters skill development, teamwork, and peak
+              performance through dedicated practice and preparation areas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="border-y-2 border-dashed py-12">
+        <div class="lg:w-3/5 mx-auto space-y-3 text-center">
+          <h3 class="text-3xl text-gray-900 font-bold">Program Sections</h3>
+          <p class="text-base opacity-80">
+            Discover our exclusive training programs tailored to enhance every
+            player's performance. From beginner basics to advanced skills, each
+            section is designed to empower athletes and foster their growth both
+            on and off the field.
+          </p>
+        </div>
+      </section>
+      <section class="my-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div>
+            <div class="card image-full lg:w-full lg:h-96 opacity-95">
+              <figure>
+                <img
+                  class="object-cover bg-cover w-full h-full"
+                  src="./Images/2.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body pt-20">
+                <h2 class="card-title">Junior Program!</h2>
+                <p class="text-base text-white opacity-90">
+                  Our Junior Program focuses on building strong fundamentals for
+                  young players. Through fun, engaging activities and expert
+                  guidance, we help nurture skills, teamwork, and a lifelong
+                  passion for the game.
+                </p>
+                <div class="card-actions justify-start">
+                  <button
+                    class="btn border-none bg-[#FF4240] text-white text-lg font-medium hover:bg-black"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div>
+            <div class="card image-full lg:w-full lg:h-96">
+              <figure>
+                <img
+                  class="object-cover w-full h-full"
+                  src="./Images/3.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body pt-20">
+                <h2 class="card-title">Teenager Program!</h2>
+                <p class="text-base text-white opacity-90">
+                  The Teenager Program is designed to refine skills and build
+                  confidence. With a focus on advanced techniques, strategic
+                  play, and teamwork, it empowers teens to excel both on and off
+                  the field.
+                </p>
+                <div class="card-actions justify-start">
+                  <button
+                    class="btn border-none bg-[#FF4240] text-white text-lg font-medium hover:bg-black"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="lg:col-span-2">
+            <div class="card image-full lg:h-[450px]">
+              <figure>
+                <img
+                  class="object-cover bg-cover w-full h-full"
+                  src="./Images/4.png"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body lg:pt-40 lg:w-3/4 mx-auto">
+                <h2 class="card-title">Professional Program!</h2>
+                <p class="text-base text-white opacity-90">
+                  Our Professional Program is tailored for advanced players
+                  aiming to compete at the highest level. It emphasizes elite
+                  training, strategic development, and performance optimization
+                  to help athletes achieve their professional goals.
+                </p>
+                <div class="card-actions justify-start">
+                  <button
+                    class="btn border-none bg-[#FF4240] text-white text-lg font-medium hover:bg-black"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="border-dashed border-y-2 lg:mt-24">
+        <div class="py-12 lg:w-3/5 mx-auto space-y-3 text-center">
+          <h3 class="text-3xl text-gray-900 font-bold">Our New Products</h3>
+          <p class="text-base opacity-80">
+            Our new products are designed to bring innovation, quality, and
+            functionality to your everyday life. Crafted with precision and a
+            focus on customer satisfaction, they combine modern technology with
+            elegant design to meet your needs. Whether you’re upgrading your
+            lifestyle or enhancing your workspace, these products offer
+            unmatched value and performance. Explore our latest collection and
+            experience the difference today!
+          </p>
+        </div>
+      </section>
+      <!-- Add new products section with detailed description start is here! -->
+      <section class="my-12">
+        <div class="grid grid-cols-2 gap-6 lg:my-10">
+          <!-- Products Card 1 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+              src="./Images/5.png"
+              alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 2 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+                src="./Images/6.png"
+                alt="Movie"
+                />
+              </figure>
+              <div class="card-body">
+                <div class="flex justify-start items-center space-x-4">
+                  <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                  <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 3 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+                src="./Images/7.png"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 4 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+              src="./Images/8.png"
+              alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 5 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+                src="./Images/9.png"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 6 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+                src="./Images/10.png"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <!-- Products Card 7 -->
+          <div class="card card-side bg-base-100 shadow-md p-6">
+            <figure>
+              <img
+                src="./Images/5.png"
+                alt="Movie"
+                />
+            </figure>
+            <div class="card-body">
+              <div class="flex justify-start items-center space-x-4">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"><span class="text-gray-400 mx-2 text-base font-medium">5.0</span></i>
+                <i class="fa-regular fa-eye"><span class="text-gray-400 mx-2 text-base font-medium">20</span></i>
+                <i class="fa-regular fa-heart"><span class="text-gray-400 mx-2 text-base font-medium">200</span></i>
+              </div>
+              <h4 class="card-title">World Cup Flags Football</h4>
+              <p>Flags of World Cup teams celebrating global football spirit together!</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-red-500 font-medium">Price - $22.00</p>
+                <p class="text-lg font-medium text-gray-900 opacity-70"><i class="fa-solid fa-cart-shopping text-lg"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- !Add new products section with detailed description end is here -->
+    </main>
     <footer></footer>
   </body>
 </html>
